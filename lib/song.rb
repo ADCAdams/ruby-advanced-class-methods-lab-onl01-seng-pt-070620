@@ -34,6 +34,7 @@ class Song
   
   def self.alphabetical
     alphaArray = @@all.sort
+    alphaArray
   end
   
   def self.all
