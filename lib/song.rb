@@ -29,10 +29,10 @@ class Song
   end
   
   def self.find_or_create_by_name(name_string)
-
-     find_by_name(name_string) || create_by_name(name_string)
-    
+    find_by_name(name_string) || create_by_name(name_string)
   end
+  
+  def 
   
   def self.all
     @@all
