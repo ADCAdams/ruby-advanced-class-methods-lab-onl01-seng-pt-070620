@@ -37,7 +37,8 @@ class Song
   end
   
   def self.new_from_filename(fileString)
-    
+    new_name = fileString.split("-")[0]
+    puts new_name
   end
   
   def self.all
