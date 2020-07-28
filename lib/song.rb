@@ -37,9 +37,9 @@ class Song
       puts "hi"
       find_by_name(name_string)
     end
-    item = find_by_name(name_string)
+    # item = find_by_name(name_string)
     
-    find_by_name(name_string) || create_by_name(name_string)
+    # find_by_name(name_string) || create_by_name(name_string)
     
   end
   
