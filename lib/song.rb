@@ -32,7 +32,9 @@ class Song
     find_by_name(name_string) || create_by_name(name_string)
   end
   
-  def 
+  def self.alphabetical
+    alphaArray = @@all.sort
+  end
   
   def self.all
     @@all
