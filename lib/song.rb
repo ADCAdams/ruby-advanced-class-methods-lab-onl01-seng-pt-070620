@@ -50,7 +50,7 @@ class Song
     new_song
   end
    
-  def create_from_filename(fileString)
+  def self.create_from_filename(fileString)
      new_artist = fileString.split("-")[0].to_s.strip
     new_name = fileString.split("-")[1].to_s.chomp(".mp3").strip
     #binding.pry
