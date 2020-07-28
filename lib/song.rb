@@ -29,13 +29,13 @@ class Song
   end
   
   def self.find_or_create_by_name(name_string)
-    if find_by_name(name_string) == false 
-      puts "hllo"
-      create_by_name(name_string)
-    else
-      puts "hi"
-      find_by_name(name_string)
-    end
+    # if find_by_name(name_string) == false 
+    #   puts "hllo"
+    #   create_by_name(name_string)
+    # else
+    #   puts "hi"
+    #   find_by_name(name_string)
+    # end
   end
   
   def self.all
