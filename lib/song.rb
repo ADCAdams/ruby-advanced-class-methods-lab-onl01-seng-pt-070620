@@ -39,7 +39,7 @@ class Song
     end
     # item = find_by_name(name_string)
     
-    # find_by_name(name_string) || create_by_name(name_string)
+    create_by_name(name_string) if find_by_name(name_string) == false
     
   end
   
