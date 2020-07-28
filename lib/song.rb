@@ -41,8 +41,8 @@ class Song
     new_artist = fileString.split("-")[0].to_s.strip
     new_name = fileString.split("-")[1].to_s.chomp(".mp3").strip
     #binding.pry
-    create_by_name(new_name).artist_name = new_artist
-    #newsong.artist = new_artist
+    newsong = create_by_name(new_name)
+    newsong.artist = new_artist
   end
   
   def self.all
