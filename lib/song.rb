@@ -22,7 +22,9 @@ class Song
   end
   
   def self.find_by_name(search_string)
-    
+    @@all.each do |all_song|
+      return all_song if all_song.name == search_string
+    end
   end
   
   def self.all
