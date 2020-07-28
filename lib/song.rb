@@ -25,7 +25,7 @@ class Song
     @@all.each do |all_song|
       return all_song if all_song.name == search_string
     end
-    false
+    nil
   end
   
   def self.find_or_create_by_name(newString)
