@@ -30,16 +30,16 @@ class Song
   
   def self.find_or_create_by_name(newString)
     name_string = newString.to_s
-    # if find_by_name(name_string) == false 
-    #   puts "hllo"
-    #   create_by_name(name_string)
-    # else
-    #   puts "hi"
-    #   find_by_name(name_string)
-    # end
+    if find_by_name(name_string) == false 
+      puts "hllo"
+      create_by_name(name_string)
+    else
+      puts "hi"
+      find_by_name(name_string)
+    end
     # item = find_by_name(name_string)
     
-    create_by_name(name_string) if find_by_name(name_string) == false
+     find_by_name(name_string) && create_by_name(name_string)
     
   end
   
