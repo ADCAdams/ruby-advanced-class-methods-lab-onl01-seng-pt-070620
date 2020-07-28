@@ -15,9 +15,10 @@ class Song
     song
   end
   
-  def self.create_by_name(newName)
+  def self.create_by_name(newName,newArtist)
     song = self.new 
     song.name = newName
+    song.artist = newArtist
     @@all << song 
     song
   end
