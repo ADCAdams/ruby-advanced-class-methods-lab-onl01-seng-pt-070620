@@ -25,6 +25,7 @@ class Song
     @@all.each do |all_song|
       return all_song if all_song.name == search_string
     end
+    return false
   end
   
   def self.all
