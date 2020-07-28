@@ -21,6 +21,10 @@ class Song
     song
   end
   
+  def self.find_by_name(search_string)
+    
+  end
+  
   def self.all
     @@all
   end
