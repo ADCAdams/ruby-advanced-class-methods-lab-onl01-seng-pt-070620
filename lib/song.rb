@@ -28,7 +28,8 @@ class Song
     false
   end
   
-  def self.find_or_create_by_name(name_string)
+  def self.find_or_create_by_name(newString)
+    name_string = newString.to_s
     if find_by_name(name_string) == false 
       puts "hllo"
       create_by_name(name_string)
