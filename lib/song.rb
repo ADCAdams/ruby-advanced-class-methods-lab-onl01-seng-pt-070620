@@ -43,7 +43,11 @@ class Song
     #binding.pry
     # newsong = create_by_name(new_name)
     # newsong.artist_name = new_artist
-    
+    new_song = self.new
+    new_song.name = new_name
+    new_song.artist_name = new_artist
+    @@all << new_song
+    new_song
     
   end
    
